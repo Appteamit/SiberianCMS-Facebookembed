@@ -1,0 +1,34 @@
+<?php
+
+$option_value = $this->getOptionValue();
+$valueId = $option_value->getId();
+ 
+$settings = new Facebookembed_Form_Facebookembed();
+$settings->setValueId($valueId);
+$settings->addNav('design-save-nav', 'Submit', false);
+$settingModel = (new Facebookembed_Model_Facebookembed())->find(['value_id' => $option_value->getId()]);
+if ($settingModel->getId()) {
+    $data = $settingModel->getData();
+    $settings->populate($data);
+    //$settings->setHtmlCode($data['fb_url']);
+}
+?>
+<br>
+<div id="loadContent">
+    <div id="list"
+         class="facebookembed">
+       
+        <!-- facebookembed background set -->
+        <div class="section">
+              <?php echo $settings; ?>
+              <br>
+            <?php echo $this->importBackground($option_value, false, false); ?>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        bindForms("#loadContent");
+    });
+</script>

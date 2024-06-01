@@ -1,0 +1,29 @@
+{
+  "name": "Facebookembed",
+  "code": "facebookembed",
+  "version": "1.0.0",
+  "category": "social",
+  "model": "Facebookembed_Model_Facebookembed",
+  "desktop_uri": "facebookembed/application/",
+  "routes": [
+    {
+      "root": true,
+      "state": "facebookembed-home",
+      "controller": "FacebookembedHomeController",
+      "url": "facebookembed/mobile_list/home/value_id/:value_id",
+      "template": "l1/home.html",
+      "cache": false
+    }     
+  ],
+  "icons": [
+    "icons/facebookembed-flat1.png"
+  ],
+  "files": [
+    "js/controllers/facebookembed-controller.js",
+    "js/factory/facebookembed.js",
+    "scss/facebookembed.scss"
+  ],
+  "compile": true,
+  "use_account": false,
+  "only_once": false
+}

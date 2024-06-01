@@ -1,0 +1,41 @@
+<ion-view sb-page-background
+          class="facebookembed facebookembed-home">
+
+    <ion-nav-title>{{ page_title }}</ion-nav-title>
+
+    <ion-content class="has-header"
+                 id="item-content"
+                 scrollbar-y="false"
+                 overflow-scroll="false"
+                 delegate-handle="mainScroll">
+
+        <div class="loader"
+             ng-show="is_loading">
+            <ion-spinner icon="android"
+                         class="spinner-custom"></ion-spinner>
+        </div>
+
+        <div class="list" ng-if="!is_loading">
+           
+            <div class="item item-custom remove-border text-center" ng-if="payout.settings.title!=''">
+                <h2>{{payout.settings.title}}</h2>
+           </div>
+
+            <div class="item item-custom remove-border facebook-url-item">
+
+                <div class="resp-container">
+                    <div sb-html="facebookPage"></div>
+                </div>
+            </div>
+ 
+
+
+             <div class="item item-custom item-body remove-border" ng-if="payout.settings.message!=''">
+                <p sb-html="payout.settings.message"></p>
+            </div>
+
+        </div>
+           
+    </ion-content>
+ 
+</ion-view>
