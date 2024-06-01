@@ -30,25 +30,25 @@ class Facebookembed_Form_Facebookembed extends Siberian_Form_Abstract
             ->setRichtext();*/
 
 
-        $page_name = $this->addSimpleText('page_name', p__('facebookembed', 'Facebook Page Name'))->setRequired(true);
+        $page_name = $this->addSimpleText('page_name', p__('facebookembed', 'Elfsight Code'))->setRequired(true);
 
-         $this->addSimpleSelect("tabs", p__('appointmentpro', " Tabs to render"), [
-            "timeline" => p__('appointmentpro', "Timeline"),
-            "events" => p__('appointmentpro', "Events"),
-            "messages" => p__('appointmentpro', "Messages"),
-            "photos" => p__('appointmentpro', "Photos")
-        ]);
+      //   $this->addSimpleSelect("tabs", p__('appointmentpro', " Tabs to render"), [
+      //      "timeline" => p__('appointmentpro', "Timeline"),
+       //     "events" => p__('appointmentpro', "Events"),
+       //     "messages" => p__('appointmentpro', "Messages"),
+       //     "photos" => p__('appointmentpro', "Photos")
+       // ]);
 
-          $width = $this->addSimpleText('width', p__('facebookembed', 'Width'))->setRequired(true);
+       //   $width = $this->addSimpleText('width', p__('facebookembed', 'Width'))->setRequired(true);
 
-           $page_name = $this->addSimpleText('height', p__('facebookembed', 'Height'))->setRequired(true);
+       //    $page_name = $this->addSimpleText('height', p__('facebookembed', 'Height'))->setRequired(true);
 
-        $title = $this->addSimpleText('title', p__('facebookembed', 'Title'))->setRequired(false);
+     //   $title = $this->addSimpleText('title', p__('facebookembed', 'Title'))->setRequired(false);
 
 
         /** message */
-        $message = $this->addSimpleTextarea('message',  p__('facebookembed', 'Message'));
-        $message->setRichtext();
+      //  $message = $this->addSimpleTextarea('message',  p__('facebookembed', 'Message'));
+      //  $message->setRichtext();
 
 
         

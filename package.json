@@ -2,7 +2,7 @@
   "name": "Facebookembed",
   "description": "The Facebook embed module lets you easily embed and promote any public Facebook Page on your App. Just like on Facebook, your visitors can like and share the Page without leaving your site.",
   "type": "module",
-  "version": "1.1.0",
+  "version": "1.1.3",
   "dependencies": {
     "system": {
       "type": "SAE",
