@@ -7,8 +7,8 @@ use Siberian\Translation;
  * @param $bootstrap
  */
 $init = static function ($bootstrap) {
-    Assets::registerScss([
-        '/app/local/modules/Facebookembed/features/facebookembed/scss/facebookembed.scss'
+    Assets::registerJs([
+        '/app/local/modules/Facebookembed/features/facebookembed/scss/platform.js'
     ]);
     Translation::registerExtractor(
         'facebookembed',

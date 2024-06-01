@@ -21,8 +21,7 @@
   "files": [
     "js/controllers/facebookembed-controller.js",
     "js/factory/facebookembed.js",
-    "js/platform.js",
-    "scss/facebookembed.scss"
+    "js/platform.js"
   ],
   "compile": true,
   "use_account": false,
