@@ -2,7 +2,7 @@
   "name": "Facebookembed",
   "description": "Display your posts from multiple social networks with responsive Social Media Feed.",
   "type": "module",
-  "version": "1.1.4",
+  "version": "1.1.8",
   "dependencies": {
     "system": {
       "type": "SAE",

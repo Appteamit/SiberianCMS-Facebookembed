@@ -13,8 +13,8 @@ msgstr ""
 
 # GMT 1615448943.1001
 msgctxt "facebookembed"
-msgid "Facebook Embed IFrame Code"
-msgstr "Facebook Embed IFrame Code"
+msgid "Elfsight Social Feed Key"
+msgstr "Elfsight Social Feed Key"
 
 # GMT 1615448943.1001
 msgctxt "facebookembed"
@@ -23,5 +23,5 @@ msgstr "Title"
 
 # GMT 1615448943.1001
 msgctxt "facebookembed"
-msgid "Message"
-msgstr "Message"
+msgid "Footer Message"
+msgstr "Footer Message"
